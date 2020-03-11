@@ -33,7 +33,10 @@ endif()
 
 if(UNIX AND NOT APPLE)
 	find_package(X11 QUIET)
-	include_directories($X11_INCLUDE_DIR)
+	if(NOT X11_FOUND)
+		message(STATUS "X11 Not found -- obs-browser plugin disabled.")
+		return()
+	endif()
 endif()
 
 
@@ -43,6 +46,7 @@ configure_file(
 
 include_directories("${CMAKE_CURRENT_BINARY_DIR}")
 include_directories("${CEF_ROOT_DIR}")
+include_directories($X11_INCLUDE_DIR)
 
 # ----------------------------------------------------------------------------
 
