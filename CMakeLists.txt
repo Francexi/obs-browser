@@ -31,6 +31,12 @@ if(APPLE)
 	endif()
 endif()
 
+if(UNIX AND NOT APPLE)
+	find_package(X11 QUIET)
+	include_directories($X11_INCLUDE_DIR)
+endif()
+
+
 configure_file(
 	"${CMAKE_CURRENT_SOURCE_DIR}/browser-config.h.in"
 	"${CMAKE_CURRENT_BINARY_DIR}/browser-config.h")
