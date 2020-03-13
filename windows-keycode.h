@@ -244,24 +244,26 @@
 #define VKEY_LMENU 0xA4
 #define VKEY_RMENU 0xA5
 
-#define VKEY_BROWSER_BACK 0xA6 // Windows 2000/XP: Browser Back key
-#define VKEY_BROWSER_FORWARD 0xA7 // Windows 2000/XP: Browser Forward key
-#define VKEY_BROWSER_REFRESH 0xA8 // Windows 2000/XP: Browser Refresh key
-#define VKEY_BROWSER_STOP 0xA9 // Windows 2000/XP: Browser Stop key
-#define VKEY_BROWSER_SEARCH 0xAA // Windows 2000/XP: Browser Search key
+#define VKEY_BROWSER_BACK 0xA6      // Windows 2000/XP: Browser Back key
+#define VKEY_BROWSER_FORWARD 0xA7   // Windows 2000/XP: Browser Forward key
+#define VKEY_BROWSER_REFRESH 0xA8   // Windows 2000/XP: Browser Refresh key
+#define VKEY_BROWSER_STOP 0xA9      // Windows 2000/XP: Browser Stop key
+#define VKEY_BROWSER_SEARCH 0xAA    // Windows 2000/XP: Browser Search key
 #define VKEY_BROWSER_FAVORITES 0xAB // Windows 2000/XP: Browser Favorites key
 #define VKEY_BROWSER_HOME 0xAC // Windows 2000/XP: Browser Start and Home key
-#define VKEY_VOLUME_MUTE 0xAD // Windows 2000/XP: Volume Mute key
-#define VKEY_VOLUME_DOWN 0xAE // Windows 2000/XP: Volume Down key
-#define VKEY_VOLUME_UP 0xAF // Windows 2000/XP: Volume Up key
-#define VKEY_MEDIA_NEXT_TRACK 0xB0 // Windows 2000/XP: Next Track key
-#define VKEY_MEDIA_PREV_TRACK 0xB1 // Windows 2000/XP: Previous Track key
-#define VKEY_MEDIA_STOP 0xB2 // Windows 2000/XP: Stop Media key
-#define VKEY_MEDIA_PLAY_PAUSE 0xB3 // Windows 2000/XP: Play/Pause Media key
+#define VKEY_VOLUME_MUTE 0xAD  // Windows 2000/XP: Volume Mute key
+#define VKEY_VOLUME_DOWN 0xAE  // Windows 2000/XP: Volume Down key
+#define VKEY_VOLUME_UP 0xAF    // Windows 2000/XP: Volume Up key
+#define VKEY_MEDIA_NEXT_TRACK 0xB0  // Windows 2000/XP: Next Track key
+#define VKEY_MEDIA_PREV_TRACK 0xB1  // Windows 2000/XP: Previous Track key
+#define VKEY_MEDIA_STOP 0xB2        // Windows 2000/XP: Stop Media key
+#define VKEY_MEDIA_PLAY_PAUSE 0xB3  // Windows 2000/XP: Play/Pause Media key
 #define VKEY_MEDIA_LAUNCH_MAIL 0xB4 // Windows 2000/XP: Start Mail key
 #define VKEY_MEDIA_LAUNCH_MEDIA_SELECT 0xB5 // Windows 2000/XP: Select Media key
-#define VKEY_MEDIA_LAUNCH_APP1 0xB6 // VKEY_LAUNCH_APP1 (B6) Windows 2000/XP: Start Application 1 key
-#define VKEY_MEDIA_LAUNCH_APP2 0xB7 // VKEY_LAUNCH_APP2 (B7) Windows 2000/XP: Start Application 2 key
+#define VKEY_MEDIA_LAUNCH_APP1 \
+	0xB6 // VKEY_LAUNCH_APP1 (B6) Windows 2000/XP: Start Application 1 key
+#define VKEY_MEDIA_LAUNCH_APP2 \
+	0xB7 // VKEY_LAUNCH_APP2 (B7) Windows 2000/XP: Start Application 2 key
 
 // VKEY_OEM_1 (BA) Used for miscellaneous characters; it can vary by keyboard. Windows 2000/XP: For the US standard keyboard, the ';:' key
 #define VKEY_OEM_1 0xBA
@@ -312,12 +314,12 @@
 // Windows 2000/XP: Used to pass Unicode characters as if they were keystrokes. The VKEY_PACKET key is the low word of a 32-bit Virtual Key value used for non-keyboard input methods. For more information, see Remark in KEYBDINPUT,SendInput, WM_KEYDOWN, and WM_KEYUP
 #define VKEY_PACKET 0xE7
 
-#define VKEY_ATTN 0xF6 // Attn key
+#define VKEY_ATTN 0xF6  // Attn key
 #define VKEY_CRSEL 0xF7 // CrSel key
 #define VKEY_EXSEL 0xF8 // ExSel key
 #define VKEY_EREOF 0xF9 // Erase EOF key
-#define VKEY_PLAY 0xFA // Play key
-#define VKEY_ZOOM 0xFB // Zoom key
+#define VKEY_PLAY 0xFA  // Play key
+#define VKEY_ZOOM 0xFB  // Zoom key
 
 #define VKEY_NONAME 0xFC // Reserved for future use
 
